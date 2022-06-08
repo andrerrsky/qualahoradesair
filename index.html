@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Qual a hora de sair?</title>
+        <meta name="robots" content="noindex,nofollow">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://hostgator.com.br/wp-content/themes/hostgator/favicon-96x96.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css?v=2">
+    </head>
+
+    <script type="text/javascript">
+        function setFocus() {
+            document.getElementById("horaEntrada").focus();
+          }
+    </script>
+
+    <body onLoad="setFocus()">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Qual a hora de sair?</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-group row">
+                <div class="group-center">
+                    <label for="totalHorasDia" class="col-form-label totalHorasDia">Total de horas/dia:</label>
+                    <input class="form-control hora" type="text" id="totalHorasDia">
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="container full">
+            <div class="row">
+                <div class="hidden-xs hidden-sm hidden-md col-lg-2"></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+
+                     <div class="form-group row">
+                        <label for="horaEntrada" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Hora de entrada:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input class="form-control hora" type="text" id="horaEntrada">
+                        </div>
+                    </div>
+
+                     <div class="form-group row">
+                        <label for="horaIdaAlmoco" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Hora de almoço:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input class="form-control hora" type="text" id="horaIdaAlmoco" value="12:00">
+                        </div>
+                    </div>
+                     <div class="form-group row">
+                        <label for="horaVoltaAlmoco" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Retorno do almoço:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input class="form-control hora" type="text" id="horaVoltaAlmoco" value="13:10">
+                        </div>
+                    </div>
+                     <div class="form-group row">
+                        <label for="horaSaida" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Hora de saída:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <input class="form-control hora" type="text" id="horaSaida">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                     <div class="form-group row calculados">
+                        <label for="diferencaPrimeiroTurno" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Tempo transcorrido:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <span class="form-control hora" id="diferencaPrimeiroTurno"></span>
+                        </div>
+                    </div>
+                     <div class="form-group row calculados">
+                        <label for="tempoRestante" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Tempo restante:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <span class="form-control hora" id="tempoRestante"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="horaSaidaMinima" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Hora de saída mínima:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <span class="form-control hora" id="horaSaidaMinima"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="saldoHoras" class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-form-label">Horas a ver/dever:</label>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <span class="form-control hora" id="saldoHoras"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-2"></div>
+
+            </div>
+        </div>
+        <!-- <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
+        <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+        <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="js/calc.js?v=2" type="text/javascript"></script>
+    </body>
+</html>
