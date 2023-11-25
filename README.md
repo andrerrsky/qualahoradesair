@@ -11,4 +11,4 @@ Aplicação Web que calcula e exibe informações sobre as horas de trabalho.
 HTML, CSS/Bootstrap e JS/JQuery.
 
 ## Acesso
-*Link: https://qualahoradesair.vercel.app/*
+*Link: https://qualahoradesair.vercel.app*
